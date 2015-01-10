@@ -4,3 +4,12 @@ from django.http import HttpResponse
 
 def index(request):
 	return HttpResponse("Welcome to Meeting index view!")
+
+def meeting(request, meeting_id):
+	return HttpResponse("Meeting: %s." % meeting_id)
+
+def participants(request, meeting_id):
+	return HttpResponse("Meeting participants of : %s" % meeting_id)
+
+def meetingitems(request, meetingitem_id):
+	return HttpResponse("Meeting items of : %s" % meeting_id)

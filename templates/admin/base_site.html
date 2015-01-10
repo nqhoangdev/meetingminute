@@ -1,9 +1,8 @@
 {% extends "admin/base.html" %}
 
-{% block title %}{{ title }} | {{ site_title|default:_('Meeting minute site admin') }}{% endblock %}
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
 
 {% block branding %}
-<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Meeting minute administration') }}</a></h1>
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Meeting Administration</a></h1>
 {% endblock %}
-
 {% block nav-global %}{% endblock %}
