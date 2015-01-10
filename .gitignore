@@ -2,4 +2,4 @@ venv
 *.pyc
 staticfiles
 db.sqlite3
-migrations
+meeting/migrations
