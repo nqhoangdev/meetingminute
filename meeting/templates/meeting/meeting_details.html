@@ -1,0 +1,15 @@
+<h1>{{meeting}}</h1>
+
+<h2>Participants</h2>
+<ul>
+{% for participant in meeting.participants.all %}
+	<li> {{participant}} </li>
+{% endfor %}
+</ul>
+
+<h2>Agenda</h2>
+<ul>
+{% for meeting_item in meeting.meetingitem_set.all %}
+	<li> {{meeting_item}} </li>
+{% endfor %}
+</ul>
